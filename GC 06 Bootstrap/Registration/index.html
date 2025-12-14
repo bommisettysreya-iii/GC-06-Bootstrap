@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 
+    Assignment: Registration Form
+    Technologies Used: HTML, CSS, Bootstrap
+    Description:
+    - Registration form using Bootstrap only
+    - Form width: 50%
+    - Form height: ~75%
+    - Progress bar width: 50%
+  -->
+
+  <meta charset="UTF-8">
+  <title>Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<!-- Main container -->
+<div class="container mt-4">
+
+  <!-- Page Heading -->
+  <h2 class="mb-3">Register your self</h2>
+
+  <!-- Progress Bar (Width: 50%) -->
+  <div class="progress mb-4" style="width:50%;">
+    <div class="progress-bar bg-primary" role="progressbar" style="width:5%">
+      <!-- Progress indicator -->
+    </div>
+  </div>
+
+  <!-- Registration Form Container -->
+  <!-- Width: 50%, Height: approx 75%, Background color: Green -->
+  <div class="mx-auto p-4 text-white"
+       style="width:50%; min-height:75%; background-color:#198754;">
+
+    <!-- Registration Form -->
+    <form>
+
+      <!-- Email and Password Row -->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control">
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control">
+        </div>
+      </div>
+
+      <!-- Address Field -->
+      <div class="mb-3">
+        <label class="form-label">Address</label>
+        <input type="text" class="form-control" placeholder="1234 Main St">
+      </div>
+
+      <!-- Address 2 Field -->
+      <div class="mb-3">
+        <label class="form-label">Address 2</label>
+        <input type="text" class="form-control" placeholder="Apartment, studio, or floor">
+      </div>
+
+      <!-- City, State and Zip Row -->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">City</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="col-md-4">
+          <label class="form-label">State</label>
+          <select class="form-select">
+            <option selected>Choose...</option>
+            <option>AP</option>
+            <option>TS</option>
+            <option>KA</option>
+            <option>TN</option>
+          </select>
+        </div>
+
+        <div class="col-md-2">
+          <label class="form-label">Zip</label>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label">
+          Check me out
+        </label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-danger">
+        Sign in
+      </button>
+
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

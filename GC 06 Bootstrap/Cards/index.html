@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    Assignment: Bootstrap Cards Implementation
+    Technologies Used: HTML, CSS, Bootstrap
+    Description:
+    - Grid layout using Bootstrap
+    - Three different types of cards
+    - Close buttons included in cards
+  -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Cards</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Main container -->
+  <div class="container mt-5">
+
+    <!-- Page Heading -->
+    <h1 class="text-center mb-4">Bootstrap Cards Example</h1>
+
+    <!-- Grid Layout Row -->
+    <div class="row g-4">
+
+      <!-- Card 1: Basic Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+
+            <!-- Close Button -->
+            <button type="button" class="btn-close float-end" aria-label="Close"></button>
+
+            <h5 class="card-title">Basic Card</h5>
+            <p class="card-text">
+              This is a simple Bootstrap card with text content.
+            </p>
+
+            <!-- Action Button -->
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Card with Header and Footer -->
+      <div class="col-md-4">
+        <div class="card">
+
+          <!-- Card Header -->
+          <div class="card-header">
+            Card Header
+
+            <!-- Close Button -->
+            <button type="button" class="btn-close float-end" aria-label="Close"></button>
+          </div>
+
+          <!-- Card Body -->
+          <div class="card-body">
+            <h5 class="card-title">Header & Footer Card</h5>
+            <p class="card-text">
+              This card includes a header and footer section.
+            </p>
+          </div>
+
+          <!-- Card Footer -->
+          <div class="card-footer text-muted">
+            Card Footer
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Card 3: Image Card -->
+      <div class="col-md-4">
+        <div class="card">
+
+          <!-- Card Image -->
+          <img src="https://via.placeholder.com/300x150"
+               class="card-img-top"
+               alt="Sample Image">
+
+          <!-- Card Body -->
+          <div class="card-body">
+
+            <!-- Close Button -->
+            <button type="button" class="btn-close float-end" aria-label="Close"></button>
+
+            <h5 class="card-title">Image Card</h5>
+            <p class="card-text">
+              This card contains an image and descriptive text.
+            </p>
+
+            <!-- Action Button -->
+            <button class="btn btn-success">Explore</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
